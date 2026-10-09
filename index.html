@@ -6,38 +6,38 @@
 <title>Echo Routes Foundation</title>
 <style>
   *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif}
-  body{background:#f8faf9;color:#1a1a1a;line-height:1.6}
-  header{background:linear-gradient(135deg,#0b5c3a,#0e7a4d);color:#fff;padding:55px 20px;text-align:center}
+  body{background:#fffaf3;color:#1a1a1a;line-height:1.6}
+  header{background:linear-gradient(135deg,#0b5c3a,#f97316);color:#fff;padding:55px 20px;text-align:center}
   header h1{font-size:2.7em;margin-bottom:6px;letter-spacing:-1px}
   header p{font-size:1.2em;opacity:.95}
-  .badge{background:#ffb703;color:#0b5c3a;padding:7px 15px;border-radius:20px;font-size:.85em;font-weight:bold;display:inline-block;margin-top:14px}
-  .btn{display:inline-block;background:#ffb703;color:#0b5c3a;padding:15px 34px;border-radius:30px;font-weight:bold;text-decoration:none;margin-top:20px;font-size:1.15em;box-shadow:0 5px 15px rgba(0,0,0,.2)}
+  .badge{background:#ffb703;color:#7c2d12;padding:7px 15px;border-radius:20px;font-size:.85em;font-weight:bold;display:inline-block;margin-top:14px}
+  .btn{display:inline-block;background:#ffb703;color:#7c2d12;padding:15px 34px;border-radius:30px;font-weight:bold;text-decoration:none;margin-top:20px;font-size:1.15em;box-shadow:0 5px 15px rgba(0,0,0,.25)}
   .wrap{max-width:1000px;margin:auto;padding:0 20px}
   .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:-30px auto 28px;position:relative;z-index:2}
-  .stat-card{background:#fff;border-radius:16px;padding:24px;text-align:center;box-shadow:0 10px 25px rgba(0,0,0,.09);border-top:4px solid #0b5c3a}
+  .stat-card{background:#fff;border-radius:16px;padding:24px;text-align:center;box-shadow:0 10px 25px rgba(0,0,0,.09);border-top:4px solid #f97316}
   .stat-card h2{font-size:2.2em;color:#0b5c3a}
   .progress-card{background:#fff;border-radius:16px;padding:22px;box-shadow:0 5px 18px rgba(0,0,0,.07);margin-bottom:30px}
   .progress{background:#eef2f0;height:28px;border-radius:14px;overflow:hidden;margin:12px 0}
-  .bar{background:linear-gradient(90deg,#0b5c3a,#16a86a);width:34.4%;height:100%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:bold}
+  .bar{background:linear-gradient(90deg,#0b5c3a,#f97316);width:34.4%;height:100%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:bold}
   .card{background:#fff;border-radius:16px;padding:28px;box-shadow:0 5px 18px rgba(0,0,0,.07);margin-bottom:30px;overflow:hidden}
   .card h2{color:#0b5c3a;margin-bottom:14px;font-size:1.6em}
   .grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center}
   @media(max-width:700px){.grid2{grid-template-columns:1fr}}
   .section-pic{width:100%;height:230px;object-fit:cover;border-radius:14px;box-shadow:0 6px 15px rgba(0,0,0,.12)}
-  .box{background:#f0f7f3;padding:18px;border-radius:12px;border-left:5px solid #0b5c3a}
+  .box{background:#fff7ed;padding:18px;border-radius:12px;border-left:5px solid #f97316}
   .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
   .gallery img{width:100%;height:200px;object-fit:cover;border-radius:14px;box-shadow:0 6px 15px rgba(0,0,0,.1)}
   .donor-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}
   @media(max-width:700px){.donor-list{grid-template-columns:1fr}}
-  .donor{background:#f9faf9;padding:13px 15px;border-radius:10px;border-left:4px solid #ffb703;display:flex;justify-content:space-between;align-items:center}
+  .donor{background:#fff7ed;padding:13px 15px;border-radius:10px;border-left:4px solid #ffb703;display:flex;justify-content:space-between;align-items:center}
   .donor span{font-size:.88em;color:#0b5c3a;font-weight:bold}
-  .pay{background:linear-gradient(135deg,#0b5c3a,#0e7a4d);color:#fff;padding:28px;border-radius:16px;margin-bottom:30px;text-align:center}
+  .pay{background:linear-gradient(135deg,#0b5c3a,#f97316);color:#fff;padding:28px;border-radius:16px;margin-bottom:30px;text-align:center}
   .pay h2{color:#ffb703;margin-bottom:12px;font-size:1.5em}
   .pay-item{background:rgba(255,255,255,.16);padding:13px 15px;border-radius:10px;margin:9px 0;text-align:left}
   .pay-item b{color:#ffb703}
   .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
   @media(max-width:700px){.contact-grid{grid-template-columns:1fr}}
-  .contact-item{background:#f0f7f3;padding:14px;border-radius:10px;margin-bottom:10px}
+  .contact-item{background:#fff7ed;padding:14px;border-radius:10px;margin-bottom:10px}
   footer{background:#0b2d1f;color:#fff;text-align:center;padding:22px;font-size:.9em;margin-top:30px}
 </style>
 </head>
@@ -67,7 +67,7 @@
   <div class="card">
     <h2>Our Mission</h2>
     <div class="grid2">
-      <div><img class="section-pic" src="https://media.gettyimages.com/id/1205683344/photo/african-children-learning-during-english-class-orphanage-in-kenya.jpg?s=612x612&w=gi&k=20&c=vSpdMpxh3aRco8XM8B0iqvaqp-YAAF1Jo-917OM2aBs=" alt="Kenyan children learning in orphanage"></div>
+      <div><img class="section-pic" src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80" alt="African children"></div>
       <div><div class="box"><p>To support vulnerable children, women and families through education, food, health and community projects. We create hope and build routes for those in need across Kenya.</p></div></div>
     </div>
   </div>
@@ -76,17 +76,17 @@
     <h2>Our Vision</h2>
     <div class="grid2">
       <div><div class="box"><p>A Kenya where every child has access to education, food, shelter and opportunity. A future where no child is left behind.</p></div></div>
-      <div><img class="section-pic" src="https://media.gettyimages.com/id/1225623705/photo/group-of-happy-african-children-orphanage-in-nairobi-kenya-east-africa.jpg?s=612x612&w=gi&k=20&c=epChXksBgJKlo7A9BVcF2JJvixly18eeGG9jjD5x-ZU=" alt="Happy African children orphanage Nairobi"></div>
+      <div><img class="section-pic" src="https://images.unsplash.com/photo-1509099863731-ef4bff19e808?w=800&q=80" alt="Happy African children"></div>
     </div>
   </div>
 
   <div class="card">
     <h2>Our Impact</h2>
-    <p style="margin-bottom:16px">Real photos from Kenyan orphanages in Nairobi:</p>
+    <p style="margin-bottom:16px">Photos from our work in the community:</p>
     <div class="gallery">
-      <img src="https://media.gettyimages.com/id/1225623705/photo/group-of-happy-african-children-orphanage-in-nairobi-kenya-east-africa.jpg?s=612x612&w=gi&k=20&c=epChXksBgJKlo7A9BVcF2JJvixly18eeGG9jjD5x-ZU=" alt="Happy children Nairobi">
-      <img src="https://media.gettyimages.com/id/626654952/photo/african-little-girls-are-learning-english-language-orphanage-in-kenya.jpg?s=612x612&w=gi&k=20&c=jU1MgH4jbJUglGpYP9EK4rUmW4znbyvS15IIYrHdGEw=" alt="Little girls learning English Kenya">
-      <img src="https://media.gettyimages.com/id/1205683344/photo/african-children-learning-during-english-class-orphanage-in-kenya.jpg?s=612x612&w=gi&k=20&c=vSpdMpxh3aRco8XM8B0iqvaqp-YAAF1Jo-917OM2aBs=" alt="Children in class Kenya">
+      <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=800&q=80" alt="Children learning">
+      <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?w=800&q=80" alt="Kids smiling">
+      <img src="https://images.unsplash.com/photo-1618477247222-acbdb0e037b3?w=800&q=80" alt="Community children">
     </div>
   </div>
 
@@ -131,7 +131,7 @@
         <div class="contact-item"><b>Response</b><br>We reply within 1 hour. Thank you for giving hope.</div>
       </div>
       <div>
-        <img class="section-pic" src="https://media.gettyimages.com/id/1278834781/photo/group-of-happy-african-children-orphanage-in-nairobi-kenya-east-africa.jpg?s=612x612&w=gi&k=20&c=KCgB3akHpHSQU1XA77Gv9RGJJ6lTTojjWRb3T27qq7k=" alt="Children orphanage Nairobi Kenya">
+        <img class="section-pic" src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?w=800&q=80" alt="Children playing">
       </div>
     </div>
   </div>
