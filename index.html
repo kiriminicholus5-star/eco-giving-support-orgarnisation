@@ -3,98 +3,85 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Echo Routes Foundation - Feeding Hope, Building Futures</title>
+<title>Echo Routes Foundation</title>
 <style>
-body{font-family:Arial,sans-serif;margin:0;background:#f6f9f6;color:#222}
-header{background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c');background-size:cover;background-position:center;color:white;text-align:center;padding:80px 20px}
-header h1{font-size:42px;margin:0;color:#ffd23f}
-header p{font-size:18px;max-width:700px;margin:15px auto}
-.btn{background:#25d366;color:white;padding:14px 28px;border:none;border-radius:30px;font-size:17px;text-decoration:none;display:inline-block;margin-top:15px;font-weight:bold}
-nav{background:#0b6b3a;color:white;text-align:center;padding:12px;position:sticky;top:0;z-index:100}
-nav a{color:white;margin:0 12px;text-decoration:none;font-weight:bold}
-.section{padding:40px 20px;max-width:1100px;margin:auto}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-.card{background:white;padding:20px;border-radius:14px;box-shadow:0 4px 12px rgba(0,0,0,0.08)}
-.card h3{color:#0b6b3a;margin-top:0}
-.card img{width:100%;border-radius:10px;height:200px;object-fit:cover}
-.bank{background:#0b6b3a;color:white;padding:30px;border-radius:16px;text-align:center}
-.bank h2{margin-top:0;color:#ffd23f}
-.bank p{font-size:18px;line-height:1.6}
-.contact{background:#ff8c00;color:white;padding:30px;border-radius:16px;text-align:center}
-footer{background:#111;color:#ccc;text-align:center;padding:20px;font-size:14px}
+  body {font-family: Arial, sans-serif; margin: 0; background: #f7f9f7; color: #222;}
+  header {background: #0b5c3a; color: #fff; padding: 20px; text-align: center;}
+  header h1 {margin: 0;}
+  .container {max-width: 900px; margin: auto; padding: 20px;}
+  .stats {display: flex; gap: 12px; text-align: center; flex-wrap: wrap;}
+  .card {background: #fff; padding: 18px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin: 12px 0; flex: 1;}
+  .pay {background: #0b5c3a; color: #fff; padding: 18px; border-radius: 12px; margin: 12px 0;}
+  .donor {border-left: 4px solid #ffb703; padding: 8px 12px; margin: 8px 0; background: #f9f9f9; border-radius: 8px;}
+  .progress {background: #e5e5e5; border-radius: 10px; height: 25px; overflow: hidden;}
+  .bar {background: #0b5c3a; height: 100%; width: 34.4%; color: #fff; text-align: center; line-height: 25px; font-weight: bold;}
+  .wa {position: fixed; bottom: 20px; right: 20px; background: #25D366; color: #fff; padding: 14px 18px; border-radius: 50px; text-decoration: none; font-weight: bold; z-index: 999;}
 </style>
 </head>
 <body>
 
-<nav>
-<a href="#home">Home</a>
-<a href="#mission">Mission</a>
-<a href="#impact">Impact</a>
-<a href="#donate">Donate</a>
-<a href="#contact">Contact</a>
-</nav>
-
-<header id="home">
-<h1>ECHO ROUTES FOUNDATION</h1>
-<p>Feeding Hope, Educating Hearts, Building Futures for Orphanages in Kenya</p>
-<a class="btn" href="#donate">DONATE NOW</a>
+<header>
+  <h1>Echo Routes Foundation</h1>
+  <p>Creating Hope. Building Routes.</p>
 </header>
 
-<div class="section" id="mission">
-<h2>Who We Are</h2>
-<div class="grid">
-<div class="card">
-<img src="https://images.unsplash.com/photo-1594708767771-a7502209ff51" alt="Children">
-<h3>Our Mission</h3>
-<p>To provide food, shelter, education and love to orphaned children across Kenya, giving them a route to a brighter future.</p>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d" alt="Vision">
-<h3>Our Vision</h3>
-<p>A Kenya where no child is forgotten. Every orphan has a home, a school, and a family to believe in them.</p>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b" alt="Impact">
-<h3>Our Impact</h3>
-<p>500+ Children fed monthly, 200+ School fees paid, 5 Orphanages supported in Nairobi, Kisumu, Nakuru and Eldoret.</p>
-</div>
-</div>
+<div class="container">
+
+  <!-- LIVE STATS - EDIT THESE NUMBERS -->
+  <div class="stats">
+    <div class="card"><h1 style="color:#0b5c3a">15</h1><p>Donors Joined</p></div>
+    <div class="card"><h1 style="color:#0b5c3a">KES 103,350</h1><p>Total Raised</p></div>
+    <div class="card"><h1 style="color:#0b5c3a">KES 300,000</h1><p>Goal</p></div>
+  </div>
+
+  <!-- PROGRESS BAR -->
+  <div class="card">
+    <h3>Progress to KES 300,000</h3>
+    <div class="progress"><div class="bar">34.4%</div></div>
+    <p>KES 103,350 raised of KES 300,000 - KES 196,650 remaining</p>
+  </div>
+
+  <!-- DONOR WALL - EDIT / ADD DONORS HERE -->
+  <div class="card">
+    <h2 style="color:#0b5c3a">Our Donor Wall - Thank You!</h2>
+    <p>Real people, real support. Join them:</p>
+    
+    <div class="donor"><b>Patrick Obama</b> - KES 18,000 <span style="color:#0b5c3a">✓ Verified</span></div>
+    <div class="donor"><b>John Munez</b> - KES 17,000 <span style="color:#0b5c3a">✓ Verified</span></div>
+    <div class="donor"><b>Joseph Ngumi</b> - KES 12,000 <span style="color:#0b5c3a">✓ Verified</span></div>
+    <div class="donor"><b>Shadrack Muteti</b> - KES 12,000 <span style="color:#0b5c3a">✓ Verified</span></div>
+    <div class="donor"><b>Linah Kappa</b> - KES 10,000 <span style="color:#0b5c3a">✓ Verified</span></div>
+    <div class="donor"><b>Dorcas Mumbi</b> - KES 9,000 <span style="color:#0b5c3a">✓ Verified</span></div>
+    <div class="donor"><b>Frankestein Gekon</b> - KES 8,000 <span style="color:#0b5c3a">✓ Verified</span></div>
+    <div class="donor"><b>Fredrick Mureithi</b> - KES 6,000 <span style="color:#0b5c3a">✓ Verified</span></div>
+    <div class="donor"><b>Ann Ngunjiri</b> - KES 3,000 <span style="color:#0b5c3a">✓ Verified</span></div>
+    <div class="donor"><b>Davis Kibaki</b> - KES 3,000 <span style="color:#0b5c3a">✓ Verified</span></div>
+    <div class="donor"><b>Gladies Gatugi</b> - KES 1,600 <span style="color:#0b5c3a">✓ Verified</span></div>
+    <div class="donor"><b>Teresiah Murungi</b> - KES 1,400 <span style="color:#0b5c3a">✓ Verified</span></div>
+    <div class="donor"><b>Catherine Gaceri</b> - KES 1,200 <span style="color:#0b5c3a">✓ Verified</span></div>
+    <div class="donor"><b>David Ngece</b> - KES 1,000 <span style="color:#0b5c3a">✓ Verified</span></div>
+    <div class="donor"><b>Victor Mwenda</b> - KES 150 <span style="color:#0b5c3a">✓ Verified</span></div>
+  </div>
+
+  <!-- PAYMENT DETAILS - EDIT HERE -->
+  <div class="pay">
+    <h2 style="color:#ffb703">BE PART OF US</h2>
+    <p><b>M-PESA:</b> 0757 677 939</p>
+    <p><b>Airtel Money:</b> 254135057363</p>
+    <p><b>STANBIC BANK Account:</b> 0100015272583</p>
+    <p>Account Name: Echo Routes Foundation</p>
+  </div>
+
+  <!-- CONTACT - EDIT HERE -->
+  <div class="card">
+    <h3>Contact</h3>
+    <p>WhatsApp: +254 135 057 363 | 0757 677 939</p>
+    <p>Email: info@echoroutes.org</p>
+  </div>
+
 </div>
 
-<div class="section" id="donate">
-<div class="bank">
-<h2>DONATE - BANK FOR TRANSACTIONS</h2>
-<p><b>Bank Name:</b> Equity Bank Kenya</p>
-<p><b>Account Name:</b> Echo Routes Foundation</p>
-<p><b>Account Number:</b> [PUT YOUR ACCOUNT NUMBER HERE]</p>
-<p><b>Branch:</b> Nairobi CBD</p>
-<p><b>Paybill / Till:</b> [PUT YOUR TILL HERE]</p>
-<p>Every shilling goes directly to feeding and educating children. 100% Transparent.</p>
-</div>
-</div>
-
-<div class="section" id="impact">
-<h2>Our Impact In Pictures</h2>
-<div class="grid">
-<div class="card"><img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb" alt="1"><h3>Food Program</h3><p>500+ children fed every month</p></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80" alt="2"><h3>Education</h3><p>200+ children in school</p></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="3"><h3>Community</h3><p>5 orphanages supported in Kenya</p></div>
-</div>
-</div>
-
-<div class="section" id="contact">
-<div class="contact">
-<h2>CONTACT US</h2>
-<p><b>Email:</b> echoroutesfoundation@gmail.com</p>
-<p><b>Phone / WhatsApp:</b> +254 7XX XXX XXX</p>
-<p><b>Location:</b> Nairobi, Kenya</p>
-<p>We reply within 1 hour. Thank you for giving hope.</p>
-</div>
-</div>
-
-<footer>
-© 2026 Echo Routes Foundation - All Rights Reserved. Made with Love in Kenya.
-</footer>
+<a class="wa" href="https://wa.me/254757677939">WhatsApp Us</a>
 
 </body>
 </html>
