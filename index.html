@@ -25,8 +25,10 @@
   @media(max-width:700px){.grid2{grid-template-columns:1fr}}
   .section-pic{width:100%;height:230px;object-fit:cover;border-radius:14px;box-shadow:0 6px 15px rgba(0,0,0,.12)}
   .box{background:#fff7ed;padding:18px;border-radius:12px;border-left:5px solid #f97316}
-  .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
-  .gallery img{width:100%;height:200px;object-fit:cover;border-radius:14px;box-shadow:0 6px 15px rgba(0,0,0,.1)}
+  .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+  .gallery img{width:100%;height:190px;object-fit:cover;border-radius:14px;box-shadow:0 6px 15px rgba(0,0,0,.1)}
+  .upload-box{background:#e8f5ee;border:2px dashed #0b5c3a;padding:20px;border-radius:14px;text-align:center;margin-bottom:14px}
+  .upload-btn{background:#0b5c3a;color:#fff;padding:12px 24px;border-radius:8px;font-weight:bold;border:none;cursor:pointer;font-size:1em}
   .donor-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}
   @media(max-width:700px){.donor-list{grid-template-columns:1fr}}
   .donor{background:#fff7ed;padding:13px 15px;border-radius:10px;border-left:4px solid #ffb703;display:flex;justify-content:space-between;align-items:center}
@@ -67,7 +69,7 @@
   <div class="card">
     <h2>Our Mission</h2>
     <div class="grid2">
-      <div><img class="section-pic" src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80" alt="African children"></div>
+      <div><img class="section-pic" src="https://images.pexels.com/photos/8197512/pexels-photo-8197512.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Kenyan children smiling"></div>
       <div><div class="box"><p>To support vulnerable children, women and families through education, food, health and community projects. We create hope and build routes for those in need across Kenya.</p></div></div>
     </div>
   </div>
@@ -76,17 +78,32 @@
     <h2>Our Vision</h2>
     <div class="grid2">
       <div><div class="box"><p>A Kenya where every child has access to education, food, shelter and opportunity. A future where no child is left behind.</p></div></div>
-      <div><img class="section-pic" src="https://images.unsplash.com/photo-1509099863731-ef4bff19e808?w=800&q=80" alt="Happy African children"></div>
+      <div><img class="section-pic" src="https://images.pexels.com/photos/8197562/pexels-photo-8197562.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Happy Kenyan children"></div>
     </div>
   </div>
 
   <div class="card">
-    <h2>Our Impact</h2>
-    <p style="margin-bottom:16px">Photos from our work in the community:</p>
-    <div class="gallery">
-      <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=800&q=80" alt="Children learning">
-      <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?w=800&q=80" alt="Kids smiling">
-      <img src="https://images.unsplash.com/photo-1618477247222-acbdb0e037b3?w=800&q=80" alt="Community children">
+    <h2>Our Impact - Kenyan Children Gallery</h2>
+    <p style="margin-bottom:14px">Real, lively photos of Kenyan children from our community:</p>
+
+    <!-- UPLOAD OPTION -->
+    <div class="upload-box">
+      <h3 style="color:#0b5c3a;margin-bottom:8px">📸 Add Your Photos</h3>
+      <p style="font-size:.9em;margin-bottom:10px">Upload real photos from your phone, Facebook, or orphanage visit:</p>
+      <input type="file" id="photoUpload" accept="image/*" multiple style="display:none">
+      <button class="upload-btn" onclick="document.getElementById('photoUpload').click()">Choose Photos to Upload</button>
+      <p style="font-size:.82em;color:#555;margin-top:8px">Photos will appear below instantly. To save them permanently, upload to GitHub repo.</p>
+    </div>
+
+    <div class="gallery" id="gallery">
+      <img src="https://images.pexels.com/photos/8197512/pexels-photo-8197512.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Kenyan children 1">
+      <img src="https://images.pexels.com/photos/8197562/pexels-photo-8197562.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Kenyan children 2">
+      <img src="https://images.pexels.com/photos/8197558/pexels-photo-8197558.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Kenyan children 3">
+      <img src="https://images.pexels.com/photos/8197579/pexels-photo-8197579.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Kenyan children 4">
+      <img src="https://images.pexels.com/photos/8197584/pexels-photo-8197584.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Kenyan children 5">
+      <img src="https://images.pexels.com/photos/8197596/pexels-photo-8197596.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Kenyan children 6">
+      <img src="https://images.pexels.com/photos/8197601/pexels-photo-8197601.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Kenyan children 7">
+      <img src="https://images.pexels.com/photos/8197610/pexels-photo-8197610.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Kenyan children 8">
     </div>
   </div>
 
@@ -131,7 +148,7 @@
         <div class="contact-item"><b>Response</b><br>We reply within 1 hour. Thank you for giving hope.</div>
       </div>
       <div>
-        <img class="section-pic" src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?w=800&q=80" alt="Children playing">
+        <img class="section-pic" src="https://images.pexels.com/photos/8197512/pexels-photo-8197512.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Kenyan children">
       </div>
     </div>
   </div>
@@ -142,6 +159,21 @@
   © 2026 Echo Routes Foundation - All Rights Reserved.<br>
   Made with Love in Kenya ❤️
 </footer>
+
+<script>
+  document.getElementById('photoUpload').addEventListener('change', function(e){
+    const gallery = document.getElementById('gallery');
+    for(const file of e.target.files){
+      const reader = new FileReader();
+      reader.onload = function(ev){
+        const img = document.createElement('img');
+        img.src = ev.target.result;
+        gallery.appendChild(img);
+      }
+      reader.readAsDataURL(file);
+    }
+  });
+</script>
 
 </body>
 </html>
