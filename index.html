@@ -15,7 +15,10 @@
   .donor {border-left: 4px solid #ffb703; padding: 8px 12px; margin: 8px 0; background: #f9f9f9; border-radius: 8px;}
   .progress {background: #e5e5e5; border-radius: 10px; height: 25px; overflow: hidden;}
   .bar {background: #0b5c3a; height: 100%; width: 34.4%; color: #fff; text-align: center; line-height: 25px; font-weight: bold;}
+  .pics {display: flex; gap: 12px; flex-wrap: wrap;}
+  .pics img {width: 100%; max-width: 280px; border-radius: 12px;}
   .wa {position: fixed; bottom: 20px; right: 20px; background: #25D366; color: #fff; padding: 14px 18px; border-radius: 50px; text-decoration: none; font-weight: bold; z-index: 999;}
+  footer {background: #0b5c3a; color: #fff; text-align: center; padding: 15px; margin-top: 20px;}
 </style>
 </head>
 <body>
@@ -27,7 +30,7 @@
 
 <div class="container">
 
-  <!-- LIVE STATS - EDIT THESE NUMBERS -->
+  <!-- LIVE STATS -->
   <div class="stats">
     <div class="card"><h1 style="color:#0b5c3a">15</h1><p>Donors Joined</p></div>
     <div class="card"><h1 style="color:#0b5c3a">KES 103,350</h1><p>Total Raised</p></div>
@@ -41,11 +44,31 @@
     <p>KES 103,350 raised of KES 300,000 - KES 196,650 remaining</p>
   </div>
 
-  <!-- DONOR WALL - EDIT / ADD DONORS HERE -->
+  <!-- ABOUT / MISSION / VISION -->
+  <div class="card">
+    <h2 style="color:#0b5c3a">About Us</h2>
+    <p>Echo Routes Foundation is a Kenyan charity creating hope and building routes for communities in need.</p>
+    <h3>Our Mission</h3>
+    <p>To support vulnerable children, women and families through education, food, health and community projects.</p>
+    <h3>Our Vision</h3>
+    <p>A Kenya where every child has access to education, food, shelter and opportunity.</p>
+  </div>
+
+  <!-- IMPACT PICTURES -->
+  <div class="card">
+    <h2 style="color:#0b5c3a">Our Impact</h2>
+    <p>Photos from our work in the community:</p>
+    <div class="pics">
+      <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80" alt="Education">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Community">
+      <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c" alt="Helping Children">
+    </div>
+  </div>
+
+  <!-- DONOR WALL -->
   <div class="card">
     <h2 style="color:#0b5c3a">Our Donor Wall - Thank You!</h2>
     <p>Real people, real support. Join them:</p>
-    
     <div class="donor"><b>Patrick Obama</b> - KES 18,000 <span style="color:#0b5c3a">✓ Verified</span></div>
     <div class="donor"><b>John Munez</b> - KES 17,000 <span style="color:#0b5c3a">✓ Verified</span></div>
     <div class="donor"><b>Joseph Ngumi</b> - KES 12,000 <span style="color:#0b5c3a">✓ Verified</span></div>
@@ -63,23 +86,30 @@
     <div class="donor"><b>Victor Mwenda</b> - KES 150 <span style="color:#0b5c3a">✓ Verified</span></div>
   </div>
 
-  <!-- PAYMENT DETAILS - EDIT HERE -->
+  <!-- PAYMENT DETAILS -->
   <div class="pay">
     <h2 style="color:#ffb703">BE PART OF US</h2>
     <p><b>M-PESA:</b> 0757 677 939</p>
     <p><b>Airtel Money:</b> 254135057363</p>
     <p><b>STANBIC BANK Account:</b> 0100015272583</p>
     <p>Account Name: Echo Routes Foundation</p>
+    <p><b>Buy Goods:</b> Use the same numbers above - send your donation and WhatsApp us your receipt</p>
   </div>
 
-  <!-- CONTACT - EDIT HERE -->
+  <!-- CONTACT US -->
   <div class="card">
-    <h3>Contact</h3>
-    <p>WhatsApp: +254 135 057 363 | 0757 677 939</p>
-    <p>Email: info@echoroutes.org</p>
+    <h2>CONTACT US</h2>
+    <p><b>Email:</b> echoroutesfoundation@gmail.com</p>
+    <p><b>Phone / WhatsApp:</b> +254 757 677 939</p>
+    <p><b>Location:</b> Nairobi, Kenya</p>
+    <p>We reply within 1 hour. Thank you for giving hope.</p>
   </div>
 
 </div>
+
+<footer>
+  © 2026 Echo Routes Foundation - All Rights Reserved. Made with Love in Kenya.
+</footer>
 
 <a class="wa" href="https://wa.me/254757677939">WhatsApp Us</a>
 
